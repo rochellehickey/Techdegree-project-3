@@ -1,3 +1,24 @@
 body {
   font-family: 'EB Garamond', serif;
+  margin: 0 auto;
+}
+
+header {
+  background: #6a5d93;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: normal;
+}
+
+/* ------ MEDIA QUERIES ------ */
+
+@media (min-width: 768px) {
+
+
+
 }
