@@ -22,21 +22,21 @@
         <hr>
       </section>
 
-      <form>
+      <form action="" method="post">
         <legend>Contact Information</legend>
         <fieldset>
           <label for="name">Full Name</label><br>
-          <input id="name" type="text" placeholder="Required"><br>
+          <input id="name" name="name" type="text" placeholder="Required"><br>
           <label for="email">Email Address</label><br>
-          <input id="email" type="email" placeholder="Required"><br>
+          <input id="email" name="email" type="email" placeholder="Required"><br>
           <label for="phone">Phone Number</label><br>
-          <input id="phone" type="text"><br>
+          <input id="phone" name="phone" type="text"><br>
           <label for="street">Street Address</label><br>
-          <input id="street" type="text"><br>
+          <input id="street" name="street" type="text"><br>
           <label for="city">City</label><br>
-          <input id="city" type="text"><br>
+          <input id="city" name="city" type="text"><br>
           <label for="state">State</label><br>
-          <select id="state" type="text">
+          <select id="state" name="state" type="text">
             <optgroup label="A">
               <option>Alabama</option>
               <option>Alaska</option>
@@ -127,13 +127,25 @@
             </optgroup>
           </select><br>
           <label for="zip-code">Zip Code</label><br>
-          <input id="zip-code" type="text">
+          <input id="zip-code" name="zip-code" type="text">
 
         </fieldset>
         <hr>
         <legend>Newsletter</legend>
         <fieldset>
-
+          <p>Select the newsletter you would like to receive</p>
+          <input id="html-news" name="html-news" type="checkbox"><label for="html-news"> HTML News</label><br>
+          <input id="css-news" name="css-news" type="checkbox"><label for="css-news"> CSS News</label><br>
+          <input id="javascript-news" name="javascript-news" type="checkbox"><label for="javascript-news"> Javascript News</label>
+        </fieldset>
+        <fieldset>
+          <p>Newsletter format</p>
+          <input id="html-format" name="html-format" type="radio"><label for="html-format"> HTML</label><br>
+          <input id="plain-text-format" name="plain-text-format" type="radio"><label for="plain-text-format"> Plain text</label>
+        </fieldset>
+        <fieldset>
+          <p>Other topics you'd like to hear about</p>
+          <textarea id="fill-text-box" name="fill-text-box" ></textarea>
         </fieldset>
         <button type="submit">Sign Up</button>
       </form>
