@@ -32,6 +32,11 @@ p {
   font-size: 1rem;
 }
 
+form {
+  border-top: 2px solid #0f6586;
+  margin-top: 3px;
+}
+
 legend {
   color: #aa85a9;
   text-align: left;
@@ -88,14 +93,10 @@ label {
   text-align: center;
 }
 
-form {
-  border-top: 2px solid #0f6586;
-  margin-top: 3px;
-}
-
 input[type=text],
 input[type=email],
-select {
+select,
+textarea {
   background: #f6f6f6;
   border: 2px solid transparent;
   width: 100%;
@@ -107,7 +108,13 @@ select {
   color: #9c9c9c;
 }
 
-input:focus {
+textarea {
+  height: 100px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
   outline: none;
   border: 2px solid #0f6586;
 }
