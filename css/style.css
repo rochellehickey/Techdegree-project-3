@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ label {
 }
 
 .intro {
-
+  border-bottom: 4px solid #0f6586;
 }
 
 .intro-text {
@@ -68,6 +68,11 @@ label {
 .subscriber-preferences {
   border: none;
   padding: 0;
+}
+
+.subscriber-info {
+  border-bottom: 2px solid #0f6586;
+  padding-bottom: 30px;
 }
 
 .input-wrapper {
@@ -83,6 +88,11 @@ label {
   text-align: center;
 }
 
+form {
+  border-top: 2px solid #0f6586;
+  margin-top: 3px;
+}
+
 input[type=text],
 input[type=email],
 select {
@@ -93,7 +103,7 @@ select {
   padding: 0 20px;
   border-radius: 5px;
   font-size: 1rem;
-  font-family: 'PT Serif', serif;
+  font-family: inherit;
   color: #9c9c9c;
 }
 
