@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'PT Serif', serif;
   margin: 0 auto;
@@ -41,6 +45,8 @@ label {
   color: #9c9c9c;
   font-size: 1rem;
   text-align: left;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -58,14 +64,18 @@ label {
   padding-bottom: 20px;
 }
 
-.label {
-  margin-top: 20px;
-}
-
 .subscriber-info,
 .subscriber-preferences {
   border: none;
   padding: 0;
+}
+
+.input-wrapper {
+  margin-top: 15px;
+}
+
+.zip {
+  width: 50%;
 }
 
 .footer-text {
@@ -73,15 +83,23 @@ label {
   text-align: center;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email],
+select {
   background: #f6f6f6;
-  border: none;
+  border: 2px solid transparent;
   width: 100%;
   height: 48px;
+  padding: 0 20px;
   border-radius: 5px;
   font-size: 1rem;
   font-family: 'PT Serif', serif;
   color: #9c9c9c;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #0f6586;
 }
 
 input::placeholder {
