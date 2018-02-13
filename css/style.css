@@ -63,14 +63,6 @@ fieldset {
   display: inline-block;
 }
 
-.checkbox-wrapper {
-
-}
-
-.radio-button-wrapper {
-
-}
-
 input[type=checkbox],
 input[type=radio] {
   margin: 0 10px 0 0;
