@@ -21,30 +21,30 @@
       </section>
 
       <form action="" method="post">
-        <legend>Contact Information</legend>
         <fieldset class="subscriber-info">
+          <legend class="legend">Contact Information</legend>
           <div class="input-wrapper">
-            <label for="name">Full Name</label>
+            <label class="label" for="name">Full Name</label>
             <input id="name" name="name" type="text" placeholder="Required">
           </div>
           <div class="input-wrapper">
-            <label for="email">Email Address</label>
+            <label class="label" for="email">Email Address</label>
             <input id="email" name="email" type="email" placeholder="Required">
           </div>
           <div class="input-wrapper">
-            <label for="phone">Phone Number</label>
+            <label class="label" for="phone">Phone Number</label>
             <input id="phone" name="phone" type="text">
           </div>
           <div class="input-wrapper">
-            <label for="street">Street Address</label>
+            <label class="label" for="street">Street Address</label>
             <input id="street" name="street" type="text">
           </div>
           <div class="input-wrapper">
-            <label for="city">City</label>
+            <label class="label" for="city">City</label>
             <input id="city" name="city" type="text">
           </div>
           <div class="input-wrapper">
-            <label for="state">State</label>
+            <label class="label" for="state">State</label>
             <select id="state" name="state">
               <option>Choose State</option>
               <optgroup label="A">
@@ -138,28 +138,40 @@
             </select>
           </div>
           <div class="input-wrapper zip">
-            <label for="zip-code">Zip Code</label>
+            <label class="label" for="zip-code">Zip Code</label>
             <input id="zip-code" name="zip-code" type="text">
           </div>
         </fieldset>
 
-        <legend>Newsletter</legend>
-        <p>Select the newsletter you would like to receive</p>
-        <fieldset class="subscriber-preferences">
-          <input id="html-news" name="html-news" type="checkbox"><label for="html-news"> HTML News</label>
-          <input id="css-news" name="css-news" type="checkbox"><label for="css-news"> CSS News</label>
-          <input id="javascript-news" name="javascript-news" type="checkbox"><label for="javascript-news"> Javascript News</label>
-        </fieldset>
+        <fieldset class="newsletter-preferences">
+          <legend class="legend">Newsletter</legend>
+          <fieldset class="input-wrapper checkbox">
+            <legend class="label">Select the newsletter you would like to receive</legend>
+            <div class="checkbox-wrapper">
+              <input id="html-news" name="html-news" type="checkbox"><label class="label" for="html-news">HTML News</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input id="css-news" name="css-news" type="checkbox"><label class="label" for="css-news">CSS News</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input id="javascript-news" name="javascript-news" type="checkbox"><label class="label" for="javascript-news">Javascript News</label>
+            </div>
+          </fieldset>
 
-        <p>Newsletter format</p>
-        <fieldset class="subscriber-preferences">
-          <input id="html-format" name="html-format" type="radio"><label for="html-format"> HTML</label>
-          <input id="plain-text-format" name="plain-text-format" type="radio"><label for="plain-text-format"> Plain text</label>
-        </fieldset>
+          <fieldset class="input-wrapper radio-button">
+            <legend class="label">Newsletter format</legend>
+            <div class="radio-button-wrapper">
+              <input id="html-format" name="html-format" type="radio"><label class="label" for="html-format">HTML</label>
+            </div>
+            <div class="radio-button-wrapper">
+              <input id="plain-text-format" name="plain-text-format" type="radio"><label class="label" for="plain-text-format">Plain text</label>
+            </div>
+          </fieldset>
 
-        <p>Other topics you'd like to hear about</p>
-        <fieldset class="subscriber-preferences">
-          <textarea id="fill-text-box" name="fill-text-box" ></textarea>
+          <fieldset class="input-wrapper">
+            <label class="label">Other topics you'd like to hear about</label>
+            <textarea id="fill-text-box" name="fill-text-box" ></textarea>
+          </fieldset>
         </fieldset>
         <button type="submit">Sign Up</button>
       </form>

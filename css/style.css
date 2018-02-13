@@ -37,7 +37,12 @@ form {
   margin-top: 3px;
 }
 
-legend {
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.legend {
   color: #aa85a9;
   text-align: left;
   font-size: 1.2rem;
@@ -45,13 +50,32 @@ legend {
   margin-bottom: 0;
 }
 
-label {
+.label {
   color: #9c9c9c;
   font-size: 1rem;
   text-align: left;
   display: block;
-  padding-top: 8px;
   margin-bottom: 10px;
+}
+
+.radio-button .label,
+.checkbox .label {
+  display: inline-block;
+}
+
+.checkbox-wrapper {
+
+}
+
+.radio-button-wrapper {
+
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -2px;
 }
 
 .container {
@@ -69,19 +93,13 @@ label {
   padding-bottom: 20px;
 }
 
-.subscriber-info,
-.subscriber-preferences {
-  border: none;
-  padding: 0;
-}
-
 .subscriber-info {
   border-bottom: 2px solid #0f6586;
   padding-bottom: 30px;
 }
 
 .input-wrapper {
-  margin-top: 15px;
+  margin-top: 23px;
 }
 
 .zip {
