@@ -126,6 +126,10 @@ input[type=radio] {
   transition-duration: 1s;
 }
 
+.sign-up-button:active {
+  box-shadow: 5px 5px 5px #aa85a9;
+}
+
 .sign-up-button:focus {
   outline: none;
   border: 2px solid #0f6586;
@@ -179,19 +183,23 @@ input::placeholder {
     margin: 0 auto;
   }
 
-  .input-wrapper {
+  .subscriber-info .input-wrapper {
     width: 100%;
   }
 
-  .input-wrapper label {
+  .subscriber-info .input-wrapper label {
     width: 30%;
     float: left;
   }
 
-  .input-wrapper input,
-  .input-wrapper select {
+  .subscriber-info .input-wrapper input,
+  .subscriber-info .input-wrapper select {
     width: 70%;
     float: right;
+  }
+
+  .subscriber-info .input-wrapper .zip input {
+    width: 40%;
   }
 
   .clearfix {
