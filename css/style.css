@@ -129,6 +129,7 @@ input[type=radio] {
 
 input[type=text],
 input[type=email],
+input[type=tel],
 select,
 textarea {
   background: rgba(207, 236, 206, .4);
