@@ -42,6 +42,10 @@ fieldset {
   padding: 0;
 }
 
+footer {
+  margin-bottom: 100px;
+}
+
 .legend {
   color: #aa85a9;
   text-align: left;
