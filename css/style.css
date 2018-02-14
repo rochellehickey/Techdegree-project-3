@@ -126,6 +126,7 @@ input[type=radio] {
   background: #0f6586;
   transition-property: background;
   transition-duration: 1s;
+  cursor: pointer;
 }
 
 .sign-up-button:active {
@@ -169,6 +170,11 @@ select:focus {
   transition-property: background;
   transition-duration: .6s;
 }
+
+/*:root input[type=checkbox]:focus + label:before,
+:root input[type=radio]:focus + label:before {
+  outline: 2px solid #0f6586;
+}*/
 
 input::placeholder {
   color: #9c9c9c;
