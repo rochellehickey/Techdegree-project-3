@@ -118,7 +118,7 @@ input[type=text],
 input[type=email],
 select,
 textarea {
-  background: #f6f6f6;
+  background: rgba(207, 236, 206, .4);
   border: 2px solid transparent;
   width: 100%;
   height: 48px;
@@ -135,13 +135,17 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
   border: 2px solid #0f6586;
 }
 
 input::placeholder {
   color: #9c9c9c;
+  text-align: right;
+  font-size: .8rem;
+  font-style: italic;
 }
 
 
