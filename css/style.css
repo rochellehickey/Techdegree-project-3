@@ -112,6 +112,19 @@ input[type=radio] {
   border-radius: 5px;
   background: #aa85a9;
   color: #fff;
+  transition-property: border-color;
+  transition-duration: 1s;
+}
+
+.sign-up-button:hover {
+  background: #0f6586;
+  transition-property: background;
+  transition-duration: 1s;
+}
+
+.sign-up-button:focus {
+  outline: none;
+  border: 2px solid #0f6586;
 }
 
 input[type=text],
@@ -127,6 +140,9 @@ textarea {
   font-size: 1rem;
   font-family: inherit;
   color: #9c9c9c;
+
+  transition-property: border-color;
+  transition-duration: 1s;
 }
 
 textarea {
