@@ -161,7 +161,9 @@ textarea {
   padding: 10px;
 }
 
-input:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
 textarea:focus,
 select:focus {
   background: #fff;
@@ -170,11 +172,6 @@ select:focus {
   transition-property: background;
   transition-duration: .6s;
 }
-
-/*:root input[type=checkbox]:focus + label:before,
-:root input[type=radio]:focus + label:before {
-  outline: 2px solid #0f6586;
-}*/
 
 input::placeholder {
   color: #9c9c9c;
@@ -214,10 +211,9 @@ input::placeholder {
     float: right;
   }
 
-  #zip-code {
+  .zip input[type=text] {
     width: 30%;
     float: left;
-
   }
 
   .clearfix {
